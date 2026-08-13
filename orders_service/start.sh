@@ -2,7 +2,7 @@
 
 echo "Waiting for PostgreSQL..."
 
-while ! nc -z db.microservices_vault.svc.cluster.local 5432; do
+while ! nc -z db.microservices-vault.svc.cluster.local 5432; do
   echo "PostgreSQL is unavailable - sleeping"
   sleep 2
 done
